@@ -1,18 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Donut</title>
-</head>
+{% block body %}
 
-<body>
-  <div class="container">
-    <pre class="center" id="d"></pre>
+
+<!-- Navigation bar -->
+<nav class="navigation">
+  <div class="logo">
+    <a href="#home">Develop your <span>self</span></a>
   </div>
-  <script src="main.js"></script>
-</body>
+  
+  
+  <div class="toggles">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#information">Information</a></li>
+    <li><a href="#register">Register</a></li>
 
-</html>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- home section -->
+<section id="home">
+
+    <div class="img-card">
+      
+    </div>
+    
+    <div class="content">
+        <h1>የ 2016 ራስህን አሳድግ <br>የክረምት ስልጠና</h1>
+          <h2 class="title">"ሕያው ድንጋይ" </h2>
+          <h3 class="text-animation">በ  "<span></span> "  በሚሉ ርእሶች</h3>
+          <p>
+            ይህ ስልጠና በዳቶ ፋሬስ ሕ/ብ ቤተ-ክርስቲያን የወታቶችና የልጆች አገልግሎት ክፍል <br> ጋር በመተባበር ለወጣቶችና ለታዳጊ ወጣቶች የተዘጋጀ ሲሁን።
+          </p>
+    
+    
+<div class="btn">
+      <a href="https://t.me/developyourself2022" class="active">Contact</a>
+      <a href="#register">ይመዝገቡ</a>
+</div>
+    </div>
+    
+    
+</section>
+<hr>
+
+
+<!-- about section -->
+<section id="about">
+  <div class="container">
+          <h1>ስለ አጠቃላይ <span>ሥልጠናው</span></h1>
+
+    <div class="item">
+      <h2>ስለ አዘጋጅ</h2>
+      <p>
+        ይህ ስልጠና የተዘጋጀው በዳቶ ፋረስ ሕ/ብ ቤተ-ክርስቲያን የታዳጊዎች ና የወጣቶች የአገልግሎት ክፍል ነው።
+        ለዚህም ስልጠና ታዳጊዎች ማለትም ዕድሜያቸው ከ12 - 14 እና ወጣቶች ማለትም ዕድሜያቸው  15 በላይ ።
+      </p>
+    </div>
+        <div class="item">
+          <h2>ስለ ሥልጠናው</h2>
+          <p>
+            
+            ለዚህም ስልጠና ታዳጊዎች ማለትም ዕድሜያቸው ከ12 - 14 እና ወጣቶች ማለትም ዕድሜያቸው 15 በላይ የሚሳተፉ ሲሆን ታዳጊዎች በጠዋት ፈረቃ ማለትም 2:30 - 5:30 ድረስና ወጣቶች
+            ደግሞ 8:00-11:00 ድረስ ይሰለጥናሉ።
+          </p>
+        </div>
+            <div class="item">
+              <h2>ስለ አሰልጣኞች</h2>
+              <p>
+                ይህ ስልጠና የተዘጋጀው በዳቶ ፋረስ ሕ/ብ ቤተ-ክርስቲያን አሥተባባሪነት ይደረጋል።
+                ለዚህም ሥልጠና ያሰለጥኑ ዘንድ ከሐዋሳ እ
+                ከሐዋሳ ውጭ በተጋባዥ እንግዶች እና በቤተ-ክርስቲያናችን አስተማሪዎች ይሰጣል። 
+              </p>
+            </div>
+                <div class="item">
+                  <h2>ስለ ሰልጣኞች</h2>
+                  <p>
+                    ይህንን ስልጠና ለመካፈል የሚፈልግ ማንም መጀመርያ መመዝገብ ግዴታ ነው። በፈረቃው በመገኘት ለመማር የሚያስፈልጉ ቁሳቁሶች ማዘጋጀት አዘጋጅቶ መምጣት አለበት። 
+                  </p>
+                </div>
+    
+      
+  </div>
+</section>
+
+<!-- Gallery scetion document -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="img-container">
+<div class="img1"></div>
+<div class="img2"></div>
+<div class="img3"></div>
+<div class="img4"></div>
+<div class="img5"></div>
+<div class="img6"></div>
+
+  </div>
+</section>
+
+<!-- information about the training -->
+<section id="information">
+  <h1>ስለ ሥልጠናው ጥያቄዎች </h1>
+     <div class="when">
+       <img src="static/gallery/desktop-wallpaper-7-biblical-backgrounds-the-bible.jpg" alt="" />
+       <div class="info-when">
+         <h2>መቼ ?</h2>
+         <p>ስልጠናው የሚካህሄደው በየ ዓመቱ መጨረሻ ሲሆን በየክረምቱ ተናሪዎች ና ወጣቶች ከትምህርታቸው ወደ እረፍት ሲገቡ ጊዜያቸውን በከንቱ እንዳያሳልፉ በዝ9ህ ጊዤ እንዲታነጹ የታሰበ ነው።
+         በ 2016 ክረምት ደግሞ ሥልጠናው የሚጀምረው ከነሐሴ 28 - ጳጉሜ 1 ድረስ ሲሆን መክፈቻው ፕሮግራም በነሀሴ 27 ይካሄዳል።</p>
+       </div>
+     </div>
+     
+     <div class="how">
+              <div class="info-when">
+                <h2>እንዴት ?</h2>
+                <p>ስልጠናው የሚካህሄደው በፈረቃ ሲሆን ይህም በጠዋት እና በከሰዓት ፈረቃ ነው።ዕድሜያቸው 12 - 14 ያሉ ሰልጣኞች የሚማሩት በጠዋት ፈረቃ ሲሆን 2 : 30 - 5: 30 ይሆናል።  ዕድሜያቸው 15 እና ከዚያ በላይ ያሉ ሰልጣኞች የሚማሩት በከሰዓት ፈረቃ ሲሆን 8 : 00 - 5: 00 ይሆናል።</p>
+              </div>
+        <img src="static/gallery/c67b1c113513c9549240483c0d526112.jpg">
+
+       
+       
+       
+     </div>
+     
+     <div class="where">
+              <img src="static/gallery/pngtree-a-bible-was-placed-in-the-foreground-image_10209204.jpg" alt="" />
+              <div class="info-when">
+                <h2>የት ?</h2>
+                <p>ስልጠናው የሚካህሄደው በዳቶ ፋሬስ ሕ/ብ ቤተ-ክርስቲያን ሲሆን የሚገኘውም።
+                የሚገኘውም በዳቶ ከመልካም ወጣት ፕሮጀክት 500 meter ወደ ውስጥ ሲሆን ከእዚያው ሰዎችን በማጠያየቅ ማግኘት ይችላሉ። 
+                
+                
+              </div>
+     </div>
+</section>
+
+  <section id="register">
+    <form action="/register" method="post">
+          <h2>Register</h2>
+
+      <input type="text" name="name" placeholder="Full name">
+
+      <input type="number" placeholder="your age" name="age">
+      <input type="tel" name="phone" id="phone" placeholder="Phone number">
+            <div>
+              <input type="radio" name="sex" value="male" id="sex"> <span>Male</span>
+              <input type="radio" name="sex" value="female" id="sex"> <span>Female</span>
+      
+            </div>
+      <select name="learning-status" id="learning-status">
+        <option selected disabled value="learning-status">learning-status</option>
+        <option value="Elementary">Elementary</option>
+        <option value="High-school">High school</option>
+        <option value="collage">collage</option>
+        <option value="University">University
+        </option>
+      </select>
+       <select name="church" id="church">
+          <option selected disabled value="Church">የመጡበት ቤ/ክ</option>
+          <option value="ማራናታ ቤ/ክ">ማራናታ ቤ/ክ</option>
+          <option value="ዳቶ ፋሬስ ሕ/ብ/ቤ/ክ">ዳቶ ፋሬስ ሕ/ብ/ቤ/ክ</option>
+      
+          <option value="ቃንጫ ሕ/ብ/ቤ/ክ">ቃንጫ ሕ/ብ/ቤ/ክ</option>
+          <option value="ገነት ቤ/ክ">ገነት ቤ/ክ</option>
+          <option value="ከሌላ ቤ/ክ">ከሌላ ቤ/ክ</option>
+        </select>
+      
+      <button type="submit">Register</button>
+    </form>
+  </section>
+  
+  
+    
+  </section>
+
+
+
+
+
+{% endblock %}
